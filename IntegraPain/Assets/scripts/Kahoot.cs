@@ -33,14 +33,12 @@ public class Kahoot : MonoBehaviour
     
     [SerializeField] private Image background;
 
-    private void Start()
-    {
-        Init();
-    }
 
 
-    private void Init()
+    public void Init()
     {
+        this.gameObject.SetActive(true);
+        
         P1Input = XboxControllerManager.XboxButton.RB;
         P2Input = XboxControllerManager.XboxButton.RB;
         
